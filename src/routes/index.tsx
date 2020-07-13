@@ -25,18 +25,21 @@ const Routes: React.FC = () => {
         />
 
         <Route
+          exact
           path="/dashboard/statistics"
           component={Dashboard}
           layout={DashboardLayout}
           isPrivate
         />
         <Route
+          exact
           path="/dashboard/projects"
           component={Projects}
           layout={DashboardLayout}
           isPrivate
         />
         <Route
+          exact
           path="/dashboard/tenders"
           component={Tenders}
           layout={DashboardLayout}
