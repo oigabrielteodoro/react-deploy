@@ -3,7 +3,7 @@ import React from 'react';
 import { Container } from './styles';
 
 interface IAlertProps {
-  type: 'error' | 'success';
+  type: 'error' | 'success' | 'info';
   isVisible: boolean;
 }
 

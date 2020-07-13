@@ -1,11 +1,16 @@
 import styled, { css } from 'styled-components';
+import { lighten } from 'polished';
 
 interface IContainerProps {
-  type: 'error' | 'success';
+  type: 'error' | 'success' | 'info';
   isVisible: boolean;
 }
 
 const alertTypeVariations = {
+  info: css`
+    background: ${({ theme }) => lighten(0.1, theme.colors.primary)};
+    color: ${({ theme }) => theme.colors.primary};
+  `,
   success: css`
     background: #e6fffa;
     color: #2e656a;
@@ -24,5 +29,5 @@ export const Container = styled.div<IContainerProps>`
 
   display: ${({ isVisible }) => (isVisible ? 'flex' : 'none')};
 
-  ${({ type }) => alertTypeVariations[type || 'success']};
+  ${({ type }) => alertTypeVariations[type || 'info']};
 `;

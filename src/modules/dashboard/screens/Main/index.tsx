@@ -6,12 +6,14 @@ import { format, isBefore, isAfter } from 'date-fns';
 import { useTheme } from '../../../../hooks/theme';
 import { useClickOutside } from '../../../../utils/getClickOutside';
 
-import { CardGroup, Calendar } from './styles';
+import Alert from '../../../../components/Alert';
 
 import Header from '../../components/Header';
 import Card from '../../components/Card';
 
 import LineChart from './sections/LineChart';
+
+import { CardGroup, Calendar } from './styles';
 
 const Main: React.FC = () => {
   const { theme } = useTheme();
@@ -95,6 +97,9 @@ const Main: React.FC = () => {
           isUp
         />
       </CardGroup>
+      <Alert type="error" isVisible>
+        Você precisa adquirir o Netlify para ver os acessos da página.
+      </Alert>
       <CardGroup>
         <Card>
           <header>
