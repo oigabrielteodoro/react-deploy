@@ -13,7 +13,10 @@ export const Container = styled.header`
   justify-content: space-between;
 
   /** Mobile */
-  @media screen and (max-width: 764px) {
+  @media screen and (max-width: 430px) {
+    display: grid;
+    place-items: center;
+
     padding: 0 25px;
   }
 `;

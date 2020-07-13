@@ -81,9 +81,18 @@ export const Container = styled.section`
       align-items: center;
       margin: 0 !important;
 
+      h1 {
+        font-size: 36px;
+      }
+
+      h3 {
+        font-size: 24px;
+      }
+
       p {
         text-align: center;
         margin-bottom: 30px;
+        font-size: 13px;
       }
     }
 
@@ -160,5 +169,12 @@ export const SelectPage = styled.li<ISelectPageProps>`
       css`
         background: #7051dc;
       `}
+
+    /** Mobile */
+    @media screen and (max-width: 430px) {
+      height: 26px;
+      width: 26px;
+      font-size: 10px;
+    }
   }
 `;

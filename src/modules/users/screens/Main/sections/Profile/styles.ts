@@ -18,7 +18,7 @@ export const Container = styled(Element).attrs({
   }
 
   /** Mobile */
-  @media screen and (max-width: 764px) {
+  @media screen and (max-width: 430px) {
     margin-top: 100px !important;
 
     flex-direction: column;
@@ -73,7 +73,7 @@ export const UseProfile = styled.div`
     }
 
     /** Mobile */
-    @media screen and (max-width: 764px) {
+    @media screen and (max-width: 430px) {
       flex-direction: column;
 
       a + a {
@@ -115,12 +115,17 @@ export const UseProfile = styled.div`
   }
 
   /** Mobile */
-  @media screen and (max-width: 764px) {
+  @media screen and (max-width: 430px) {
     text-align: center;
     margin: 0 !important;
 
     h1 {
       margin-top: 60px;
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 11px;
     }
   }
 `;

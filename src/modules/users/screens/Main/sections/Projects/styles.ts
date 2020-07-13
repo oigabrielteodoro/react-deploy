@@ -38,11 +38,18 @@ export const Container = styled.section`
         content: '/>';
         color: #7051dc;
       }
+
+      /** Mobile */
+      @media screen and (max-width: 430px) {
+        h1 {
+          font-size: 36px;
+        }
+      }
     }
   }
 
   /** Mobile */
-  @media screen and (max-width: 764px) {
+  @media screen and (max-width: 430px) {
     flex-direction: column;
 
     #projects {
@@ -62,6 +69,11 @@ export const UseProject = styled.div`
   h3 {
     font-size: 35px;
     margin: 50px 0;
+
+    /** Mobile */
+    @media screen and (max-width: 430px) {
+      font-size: 25px;
+    }
   }
 
   p {
@@ -83,13 +95,13 @@ export const UseProject = styled.div`
     }
 
     /** Mobile */
-    @media screen and (max-width: 764px) {
+    @media screen and (max-width: 430px) {
       display: block;
     }
   }
 
   /** Mobile */
-  @media screen and (max-width: 764px) {
+  @media screen and (max-width: 430px) {
     padding: 0 25px;
   }
 `;
@@ -102,7 +114,7 @@ export const Pagination = styled.ul`
     height: 40px;
 
     & + button {
-      margin-left: 30px;
+      margin-left: 15px;
     }
   }
 `;

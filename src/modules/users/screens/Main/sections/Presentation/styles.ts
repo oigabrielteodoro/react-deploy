@@ -59,10 +59,18 @@ export const Container = styled.section`
   }
 
   /** Mobile */
-  @media screen and (max-width: 764px) {
+  @media screen and (max-width: 430px) {
     h1,
     p {
       text-align: center;
+    }
+
+    h1 {
+      font-size: 29px;
+    }
+
+    p {
+      font-size: 15px;
     }
   }
 
