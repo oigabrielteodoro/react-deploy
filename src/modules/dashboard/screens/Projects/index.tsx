@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
-import { useHistory } from 'react-router-dom';
 import {
   FiTag,
   FiAlignCenter,
