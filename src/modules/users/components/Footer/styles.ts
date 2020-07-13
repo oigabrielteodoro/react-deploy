@@ -4,13 +4,18 @@ export const Container = styled.footer`
   display: flex;
   position: relative;
   max-width: 1120px;
-  margin: 450px auto 0;
+
+  /** Desktop */
+  @media screen and (min-width: 1200px) {
+    margin: 450px auto 0;
+  }
 
   /** Mobile */
   @media screen and (max-width: 764px) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 100px auto 0;
 
     img {
       display: none;

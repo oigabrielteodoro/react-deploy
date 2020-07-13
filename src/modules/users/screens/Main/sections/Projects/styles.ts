@@ -26,7 +26,6 @@ export const Container = styled.section`
     }
 
     h1 {
-      font-size: 50px;
       color: #f4ede8;
 
       &::before {
@@ -37,13 +36,6 @@ export const Container = styled.section`
       &::after {
         content: '/>';
         color: #7051dc;
-      }
-
-      /** Mobile */
-      @media screen and (max-width: 430px) {
-        h1 {
-          font-size: 36px;
-        }
       }
     }
   }
@@ -57,6 +49,19 @@ export const Container = styled.section`
       ul {
         display: none;
       }
+    }
+
+    > div {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  /** Desktop */
+  @media screen and (min-width: 1200px) {
+    h1 {
+      font-size: 50px;
     }
   }
 `;

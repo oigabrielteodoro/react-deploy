@@ -34,12 +34,10 @@ export const Container = styled.section`
 
     h1 {
       color: #f4ede8;
-      font-size: 40px;
     }
 
     p {
       color: #868693;
-      font-size: 20px;
       margin: 15px 0 35px;
     }
 
@@ -81,6 +79,14 @@ export const Container = styled.section`
       top: 0px;
       right: -50px;
       z-index: -1;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 20px;
     }
   }
 `;

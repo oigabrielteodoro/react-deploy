@@ -71,9 +71,10 @@ export const Container = styled.section`
   }
 
   /** Mobile */
-  @media screen and (max-width: 764px) {
+  @media screen and (max-width: 430px) {
     flex-direction: column;
     align-items: center;
+    padding: 0 25px;
 
     > div {
       display: flex;
@@ -99,6 +100,11 @@ export const Container = styled.section`
     form {
       padding: 25px !important;
       width: 100%;
+
+      /** Mobile */
+      @media screen and (max-width: 430px) {
+        margin-top: 15px;
+      }
     }
   }
 `;
@@ -172,9 +178,9 @@ export const SelectPage = styled.li<ISelectPageProps>`
 
     /** Mobile */
     @media screen and (max-width: 430px) {
-      height: 26px;
-      width: 26px;
-      font-size: 10px;
+      height: 30px;
+      width: 30px;
+      font-size: 12px;
     }
   }
 `;

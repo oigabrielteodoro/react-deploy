@@ -69,7 +69,7 @@ const Main: React.FC = () => {
     <>
       <Header title="Estatísticas" />
 
-      <CardGroup>
+      <CardGroup style={{ marginBottom: 30 }}>
         <Card
           title="Curtidas"
           icon={FiHeart}
@@ -97,7 +97,7 @@ const Main: React.FC = () => {
           isUp
         />
       </CardGroup>
-      <Alert type="error" isVisible>
+      <Alert type="info" isVisible>
         Você precisa adquirir o Netlify para ver os acessos da página.
       </Alert>
       <CardGroup>
