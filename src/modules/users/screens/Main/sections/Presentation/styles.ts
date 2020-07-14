@@ -76,7 +76,7 @@ export const Container = styled.section`
   }
 
   /** Mini Desktop */
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1024px) {
     padding: 0 25px;
 
     img {
