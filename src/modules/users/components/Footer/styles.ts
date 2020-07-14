@@ -11,14 +11,18 @@ export const Container = styled.footer`
   }
 
   /** Mobile */
-  @media screen and (max-width: 764px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @media screen and (max-width: 430px) {
+    display: grid;
+    place-items: center;
+
     margin: 100px auto 0;
 
     img {
       display: none;
+    }
+
+    span {
+      text-align: center;
     }
   }
 

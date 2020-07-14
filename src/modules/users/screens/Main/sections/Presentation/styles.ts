@@ -50,6 +50,16 @@ export const Container = styled.section`
       }
     }
 
+    /** Mobile 375px */
+    @media screen and (max-width: 375px) {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        width: 100%;
+      }
+    }
+
     h1 {
       color: #f4ede8;
     }

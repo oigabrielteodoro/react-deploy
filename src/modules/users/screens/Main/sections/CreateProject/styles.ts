@@ -74,13 +74,13 @@ export const Container = styled.section`
   @media screen and (max-width: 430px) {
     flex-direction: column;
     align-items: center;
-    padding: 0 25px;
 
     > div {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: -55px 0 0;
+      padding: 0 25px;
 
       h1 {
         font-size: 36px;
@@ -105,6 +105,7 @@ export const Container = styled.section`
       /** Mobile */
       @media screen and (max-width: 430px) {
         margin-top: 15px;
+        border-radius: 0;
       }
     }
   }
