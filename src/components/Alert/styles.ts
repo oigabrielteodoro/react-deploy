@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { lighten } from 'polished';
 
 interface IContainerProps {
   type: 'error' | 'success' | 'info';
@@ -8,8 +7,8 @@ interface IContainerProps {
 
 const alertTypeVariations = {
   info: css`
-    background: ${({ theme }) => lighten(0.1, theme.colors.primary)};
-    color: ${({ theme }) => theme.colors.primary};
+    background: #cbc5ea;
+    color: #7051dc;
   `,
   success: css`
     background: #e6fffa;
