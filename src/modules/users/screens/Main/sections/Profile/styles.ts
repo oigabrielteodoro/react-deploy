@@ -20,6 +20,7 @@ export const Container = styled(Element).attrs({
   /** Mobile */
   @media screen and (max-width: 430px) {
     margin-top: 100px !important;
+    padding: 0 15px;
 
     flex-direction: column;
     justify-content: center;

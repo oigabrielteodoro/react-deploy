@@ -14,8 +14,9 @@ export const Container = styled.header`
 
   /** Mobile */
   @media screen and (max-width: 430px) {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     padding: 0 25px;
   }
@@ -26,19 +27,8 @@ export const Navigation = styled.nav`
   align-items: center;
 
   /** Mobile */
-  @media screen and (max-width: 764px) {
-    flex-direction: column;
-
-    button {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: flex-end;
-    }
-
-    > li {
-      display: none;
-    }
+  @media screen and (max-width: 430px) {
+    display: none;
   }
 `;
 

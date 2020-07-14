@@ -19,13 +19,7 @@ const Presentation: React.FC = () => {
             Iniciar um projeto
           </Link>
 
-          <Link
-            to="profile"
-            spy
-            smooth
-            duration={1000}
-            style={{ maxWidth: 80 }}
-          >
+          <Link to="profile" spy smooth duration={1000}>
             <FiHelpCircle size={25} color="#f4ede8" />
           </Link>
         </div>

@@ -27,8 +27,26 @@ export const Container = styled.section`
       align-items: center;
       justify-content: center;
 
+      /** Mobile */
+      @media screen and (min-width: 1200px) {
+        & + a {
+          max-width: 80px;
+        }
+      }
+
       &:hover {
         background: ${shade(0.2, '#7051DC')};
+      }
+    }
+
+    /** Mobile */
+    @media screen and (max-width: 430px) {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        margin-left: 20px;
+        width: 330px;
       }
     }
 

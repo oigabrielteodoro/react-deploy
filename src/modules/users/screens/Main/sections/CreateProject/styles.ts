@@ -80,7 +80,7 @@ export const Container = styled.section`
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0 !important;
+      margin: -55px 0 0;
 
       h1 {
         font-size: 36px;
@@ -88,6 +88,7 @@ export const Container = styled.section`
 
       h3 {
         font-size: 24px;
+        text-align: center;
       }
 
       p {
@@ -178,8 +179,8 @@ export const SelectPage = styled.li<ISelectPageProps>`
 
     /** Mobile */
     @media screen and (max-width: 430px) {
-      height: 30px;
-      width: 30px;
+      height: 26px;
+      width: 26px;
       font-size: 12px;
     }
   }
