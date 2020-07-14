@@ -25,7 +25,7 @@ interface ICreateProjectFormData {
   pages: string;
 }
 
-const available = ['1', '2', '3', '4', '5', '6', '7', '+'];
+const available = ['1', '2', '3', '4', '5', '+'];
 
 const CreateProject: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
